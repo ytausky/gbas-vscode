@@ -9,6 +9,9 @@
 			"include": "#keywords"
 		},
 		{
+			"include": "#numbers"
+		},
+		{
 			"include": "#strings"
 		}
 	],
@@ -23,6 +26,12 @@
 			"patterns": [{
 				"name": "keyword.control.gbas",
 				"match": "\\b(if|while|for|return)\\b"
+			}]
+		},
+		"numbers": {
+			"patterns": [{
+				"name": "constant.numeric.gbas",
+				"match": "(\\b[0-9]+|\\$[0-9a-fA-F]+)"
 			}]
 		},
 		"strings": {
