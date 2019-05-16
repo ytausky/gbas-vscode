@@ -3,6 +3,9 @@
 	"name": "Game Boy Assembly (gbas)",
 	"patterns": [
 		{
+			"include": "#comments"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
@@ -10,6 +13,12 @@
 		}
 	],
 	"repository": {
+		"comments": {
+			"name": "comment.line.semicolon.gbas",
+			"begin": ";",
+			"end": "\n",
+			"patterns": []
+		},
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.gbas",
