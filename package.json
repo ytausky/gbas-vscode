@@ -1,0 +1,25 @@
+{
+    "name": "gbas-vscode",
+    "displayName": "gbas-vscode",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.33.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "gbas",
+            "aliases": ["Game Boy Assembly (gbas)", "gbas"],
+            "extensions": [".s"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "gbas",
+            "scopeName": "source.gbas",
+            "path": "./syntaxes/gbas.tmLanguage.json"
+        }]
+    }
+}
